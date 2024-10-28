@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Classique Hercules</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="contact-info">
+        <h2>Informações de Contato: </h2>
+        <p>Estamos à disposição para responder suas dúvidas!</p>
+        <p>Entre em contato conosco:</p>
+        <div class="contact-details">
+            <div class="contact-item">
+                <p>Email: <a href="mailto:contato@classiquehercules.com">contato@classiquehercules.com</a></p>
+            </div>
+            <div class="contact-item">
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="contact-item">
+                <p>Endereço: Rua dos Formandos, 123, Rio Grande, RS</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Envie-nos uma Mensagem</h2>
+        <form action="envia-mensagem.php" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Classique Hercules. Toda Prataria Que Sua Mesa Precisa.</p>
+    </footer>
+</body>
+</html>
